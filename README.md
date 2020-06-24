@@ -14,7 +14,7 @@ The following **required** functionality is complete:
 
 The following **optional** features are implemented:
 
-* [ ] Settings page to change the default tip percentage.
+* [X] Settings page to change the default tip percentage.
 * [X] UI animations
 * [ ] Remembering the bill amount across app restarts (if <10mins)
 * [ ] Using locale-specific currency and currency thousands separators.
@@ -28,13 +28,13 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://g.recordit.co/4kKPFkPHzl.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://g.recordit.co/z7MCWdt6hU.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-No challenges were encountered with this assignment aside from differences in xcode versions from the tutorial.
+I wasn't able to save the setting of the control bar in the settings page, would love to learn how to do that.
 
 ## Credits
 
