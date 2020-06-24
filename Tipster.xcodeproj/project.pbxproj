@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		945F73FF24A2CA390020B57D /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 945F73FE24A2CA390020B57D /* SettingsViewController.m */; };
 		94D2805A24A2A4DA0028DFF5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D2805924A2A4DA0028DFF5 /* AppDelegate.m */; };
 		94D2805D24A2A4DA0028DFF5 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D2805C24A2A4DA0028DFF5 /* SceneDelegate.m */; };
 		94D2806024A2A4DA0028DFF5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D2805F24A2A4DA0028DFF5 /* ViewController.m */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		945F73FD24A2CA390020B57D /* SettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		945F73FE24A2CA390020B57D /* SettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		94D2805524A2A4DA0028DFF5 /* Tipster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tipster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94D2805824A2A4DA0028DFF5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		94D2805924A2A4DA0028DFF5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -111,6 +114,8 @@
 				94D2805E24A2A4DA0028DFF5 /* ViewController.h */,
 				94D2805F24A2A4DA0028DFF5 /* ViewController.m */,
 				94D2806124A2A4DA0028DFF5 /* Main.storyboard */,
+				945F73FD24A2CA390020B57D /* SettingsViewController.h */,
+				945F73FE24A2CA390020B57D /* SettingsViewController.m */,
 				94D2806424A2A4DB0028DFF5 /* Assets.xcassets */,
 				94D2806624A2A4DB0028DFF5 /* LaunchScreen.storyboard */,
 				94D2806924A2A4DB0028DFF5 /* Info.plist */,
@@ -269,6 +274,7 @@
 			files = (
 				94D2806024A2A4DA0028DFF5 /* ViewController.m in Sources */,
 				94D2805A24A2A4DA0028DFF5 /* AppDelegate.m in Sources */,
+				945F73FF24A2CA390020B57D /* SettingsViewController.m in Sources */,
 				94D2806B24A2A4DB0028DFF5 /* main.m in Sources */,
 				94D2805D24A2A4DA0028DFF5 /* SceneDelegate.m in Sources */,
 			);

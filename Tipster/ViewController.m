@@ -11,7 +11,6 @@
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *billField;
 @property (weak, nonatomic) IBOutlet UILabel *tipLabel;
-@property (weak, nonatomic) IBOutlet UISegmentedControl *tipControl;
 @property (weak, nonatomic) IBOutlet UILabel *totalLabel;
 @end
 
@@ -19,7 +18,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setDouble:0.1 forKey:@"default_tip_percentage"];
+    [defaults synchronize];
 }
 
 - (IBAction)onTap:(id)sender {
@@ -27,8 +28,8 @@
 }
 - (IBAction)onEdit:(id)sender {
     double bill = [self.billField.text doubleValue];
-    NSArray *percentages = @[@(0.15), @(0.2), @(0.22)];
-    double tipPercentage = [percentages[self.tipControl.selectedSegmentIndex] doubleValue];
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    double tipPercentage = [defaults doubleForKey:@"default_tip_percentage"];
     double tip = tipPercentage * bill;
     double total = bill + tip;
     self.tipLabel.text = [NSString stringWithFormat:@"$%.2f", tip];
@@ -39,6 +40,7 @@
 - (IBAction)onEditingBegin:(id)sender {
     [UIView animateWithDuration:0.2 animations:^{
         self.billField.frame = CGRectMake(self.billField.frame.origin.x, self.billField.frame.origin.y + 30, self.billField.frame.size.width, self.billField.frame.size.height);
+        self.totalLabel.alpha = 0;
         self.tipLabel.alpha = 0;
     }];
     
@@ -49,7 +51,8 @@
     newFrame.origin.y -= 30;
     [UIView animateWithDuration:0.2 animations:^{
         self.billField.frame = newFrame;
-          self.tipLabel.alpha = 1;
+        self.totalLabel.alpha = 1;
+        self.tipLabel.alpha = 1;
     }];
 }
 
